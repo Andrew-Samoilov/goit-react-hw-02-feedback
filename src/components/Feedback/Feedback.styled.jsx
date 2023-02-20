@@ -18,5 +18,9 @@ export const Section = styled.section`
 `;
 
 export const Btn = styled.button`
-    padding: 1vh;
+    padding: 1vh 2vh;
+    margin: 1vh;
+    border-radius: 1vh;
+    border-style: none;
+    cursor: pointer;
 `;
