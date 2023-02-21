@@ -14,4 +14,5 @@ export const Btn = styled.button`
     border-radius: 1vh;
     border-style: none;
     cursor: pointer;
+    text-transform: capitalize;
 `;

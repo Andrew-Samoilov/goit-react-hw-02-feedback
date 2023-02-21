@@ -13,16 +13,14 @@ class App extends React.Component {
 
   AllClick = clickType=> {  
     this.setState(prevState => {
-          return {
-            [clickType]: prevState[clickType] + 1,
-          }
+          return {[clickType]: prevState[clickType] + 1,}
         });
   }
 
   render() {
     return (<MyDiv>
       <Section title="Please leave feedback">
-        <FeedbackOptions state={this.state} AllClick={this.AllClick} />
+        <FeedbackOptions options={['good','neutral','bad']} AllClick={this.AllClick} />
       </Section>
       <Section title="Statistics">
         <Statistics state={this.state} />
