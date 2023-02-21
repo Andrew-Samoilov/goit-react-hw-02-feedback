@@ -11,33 +11,12 @@ class App extends React.Component {
         bad: 0
     }
 
-AllClick = id => {  
-    switch (id) {
-      case 'good':
-        this.setState(prevState => {
+  AllClick = clickType=> {  
+    this.setState(prevState => {
           return {
-            good: prevState.good + 1,
+            [clickType]: prevState[clickType] + 1,
           }
         });
-        break;
-      case 'neutral':
-        this.setState(prevState => {
-          return {
-            neutral: prevState.neutral + 1,
-          }
-        });
-        break;
-      case 'bad':
-        this.setState(prevState => {
-          return {
-            bad: prevState.bad + 1,
-          }
-        });
-        break;
-
-      default:
-        break;
-    }
   }
 
   render() {
