@@ -1,6 +1,7 @@
 import React from "react";
 import { MyDiv } from "./Feedback.styled";
 import { Statistics } from "./Statistics";
+import {FeedbackOptions} from "./FeedbackOptions";
 import { Section } from "./Section";
 
 class App extends React.Component {
